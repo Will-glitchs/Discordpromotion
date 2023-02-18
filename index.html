@@ -1,18 +1,39 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <title>My Website</title>
     <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
       .promotion {
         text-align: center;
+        position: relative;
+        padding-top: 400px; /* added padding to move content down */
       }
+
+      .logo {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%; /* added to center the image horizontally */
+        transform: translateX(-50%); /* added to center the image horizontally */
+        max-width: 25%; /* reduced image size */
+      }
+
       h1 {
         font-size: 36px;
         font-weight: bold;
         margin-bottom: 20px;
       }
+
       p {
         font-size: 18px;
         margin-bottom: 20px;
       }
+
       a {
         font-size: 20px;
         font-weight: bold;
@@ -22,8 +43,9 @@
   </head>
   <body>
     <div class="promotion">
+      <img class="logo" src="https://cdn.discordapp.com/attachments/1067910212272541727/1073628444128198766/Daring_Development_Projects.png">
       <h1>Join our Discord community now!</h1>
-      <p>We offer a variety of channels for different interests, from gaming to chatting to your favourate things to do and more. Our active and friendly members create a welcoming atmosphere for everyone.</p>
+      <p>We offer a variety of channels for different interests, from gaming to chatting to your favourite things to do and more. Our active and friendly members create a welcoming atmosphere for everyone.</p>
       <p>Come chat, participate in events, and make new friends with like-minded individuals. Don't miss out on the fun and excitement.</p>
       <a href="https://discord.gg/MgWrSHujtv">Join now!</a>
     </div>
